@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
  Route::get('/ortu',function(){
 $or = App\keluarga::all();
 foreach ($or as $data) {
@@ -29,3 +30,8 @@ foreach ($or as $data) {
  Route::get('/percobaan', 'MyController@index');
  Route::get('/tampilan', 'MyController@tampilan');
  Route::get('/tampilan1', 'MyController@tampilmodel');
+ Route::resource('keluarga', 'keluargaController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
