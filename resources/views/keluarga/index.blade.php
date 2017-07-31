@@ -37,9 +37,9 @@
 				@endforeach
 			</td>
 			<td>
-				<a class="btn btn-warning" href="keluarga/{{$data->id}}/edit">Edit</a>
+				<a class="btn btn-warning" href="/keluarga/{{$data->id}}/edit">Edit</a>
 				<td>
-					<a class="btn btn-primary" href="keluarga/{{$data->id}}/show">Show</a>
+					<a class="btn btn-primary" href="/keluarga/{{$data->id}}">Show</a>
 				</td>
 				<td>
 					<form action="{{route('keluarga.destroy',$data->id)}}" method="post">
@@ -56,7 +56,7 @@
 			@endforeach
 		</tbody>
 		</table>
-		</div>
+		</div>s
 		</div>
 	</div>
 </div>

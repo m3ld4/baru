@@ -31,6 +31,7 @@ foreach ($or as $data) {
  Route::get('/tampilan', 'MyController@tampilan');
  Route::get('/tampilan1', 'MyController@tampilmodel');
  Route::resource('keluarga', 'keluargaController');
+Route::resource('anak', 'AnakContreller');
 
 Auth::routes();
 
